@@ -1,0 +1,13 @@
+import java.util.*;
+import java.lang.*;
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringTokenizer stk=new StringTokenizer(sc.nextLine(),".");
+        int y = Integer.parseInt(stk.nextToken());
+        int m = Integer.parseInt(stk.nextToken());
+        int d = Integer.parseInt(stk.nextToken());
+        
+        System.out.println(String.format("%04d.%02d.%02d",y,m,d));
+    }
+}
