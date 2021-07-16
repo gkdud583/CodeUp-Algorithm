@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        StringTokenizer st = new StringTokenizer(sc.nextLine(),".");
+        int y = Integer.parseInt(st.nextToken());
+        int m = Integer.parseInt(st.nextToken());
+        int d = Integer.parseInt(st.nextToken());
+        
+        System.out.println(String.format("%02d-%02d-%04d",d,m,y));
+      
+    }
+}

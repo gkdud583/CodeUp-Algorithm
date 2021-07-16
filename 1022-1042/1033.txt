@@ -1,0 +1,24 @@
+import java.util.*;
+import java.lang.*;
+public class Main{
+    static String parse(int num){
+        StringBuilder sb = new StringBuilder();
+        while(num > 0){
+            if(num % 16 >= 10)
+                sb.append((char)(num%16+55));
+            else
+                sb.append(num % 16);
+            num /= 16;
+        }
+        return sb.reverse().toString();
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(parse(sc.nextInt())); 
+        
+   
+      
+    }
+}
+
+ 

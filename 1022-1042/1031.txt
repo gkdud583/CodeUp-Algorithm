@@ -1,0 +1,21 @@
+import java.util.*;
+import java.lang.*;
+public class Main{
+    static String parse(int num){
+        StringBuilder sb = new StringBuilder();
+        while(num > 0){
+            sb.append(num % 8);
+            num /= 8;
+        }
+        return sb.reverse().toString();
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(parse(sc.nextInt())); 
+        
+   
+      
+    }
+}
+
+ 

@@ -1,0 +1,22 @@
+import java.util.*;
+import java.lang.*;
+public class Main{
+    static int parse(String num){
+        int hex = 0;
+        int mul = 1;
+        for(int i=num.length()-1; i>=0; i--){
+            hex = hex + ((num.charAt(i)-'0') * mul);
+            mul *= 8;
+        }
+        return hex;
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        System.out.println(parse(sc.nextLine())); 
+        
+   
+      
+    }
+}
+
+ 
