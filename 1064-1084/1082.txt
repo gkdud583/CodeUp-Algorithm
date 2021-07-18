@@ -1,0 +1,38 @@
+
+import java.util.*;
+
+public class Main{
+   
+    static String decToHec(int num){
+        StringBuffer sb = new StringBuffer();
+        while(num > 0){
+            int remainder = num % 16;
+            num = num / 16;
+            if(remainder >= 10)
+                sb.append((char)(remainder + 55));
+            else
+                sb.append(remainder);
+        }
+        return sb.reverse().toString();
+    }
+    
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        
+        String input = sc.nextLine();
+        char c = input.charAt(0);
+        int parse = c - 55;
+        
+        for(int i=1; i<=15; i++){
+            String result = decToHec(parse * i);
+            
+            if(i >= 10){
+                char mul = (char)(i+55);
+                System.out.println(c+"*"+mul+"="+result);
+            }else{
+                System.out.println(c+"*"+i+"="+result);
+     
+            }
+        }        
+    }
+}

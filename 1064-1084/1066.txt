@@ -1,0 +1,31 @@
+
+import java.util.*;
+
+public class Main{
+    static boolean isEven(int num){
+        if(num % 2 == 0)
+            return true;
+        return false;
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        int c = sc.nextInt();
+        
+        if(isEven(a))
+            System.out.println("even");
+        else
+            System.out.println("odd");
+            
+        if(isEven(b))
+            System.out.println("even");
+        else
+            System.out.println("odd");
+            
+        if(isEven(c))
+            System.out.println("even");
+        else
+            System.out.println("odd");
+    }
+}

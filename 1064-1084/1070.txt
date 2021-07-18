@@ -1,0 +1,26 @@
+
+import java.util.*;
+
+public class Main{
+   
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+       
+      
+        int m = sc.nextInt();
+        
+        String season = "";
+        if(m >= 9 && m <= 11)
+            season = "fall";
+        else if(m >= 6 && m <= 8)
+            season = "summer";
+        else if(m >= 3 && m <= 5)
+            season = "spring";
+        else
+            season = "winter";
+            
+        System.out.println(season);
+            
+        
+    }
+}

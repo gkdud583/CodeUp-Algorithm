@@ -1,0 +1,30 @@
+
+import java.util.*;
+
+public class Main{
+   
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+       
+      
+        String s = sc.nextLine();
+        
+        char c = s.charAt(0);
+        String result = "";
+        
+        if(c == 'A')
+            result = "best!!!";
+        else if(c == 'B')
+            result = "good!!";
+        else if(c == 'C')
+            result = "run!";
+        else if(c == 'D')
+            result = "slowly~";
+        else
+            result = "what?";
+        
+        System.out.println(result);
+            
+        
+    }
+}

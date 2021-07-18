@@ -1,0 +1,30 @@
+
+
+import java.util.*;
+
+public class Main{
+    static boolean isPlus(int num){
+        return num >= 0 ? true : false;
+    }
+    static boolean isEven(int num){
+        return num % 2 == 0 ? true : false;
+       
+    }
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+      
+        
+        if(isPlus(a))
+            System.out.println("plus");
+        else
+            System.out.println("minus");
+            
+        if(isEven(a))
+            System.out.println("even");
+        else
+            System.out.println("odd");
+            
+        
+    }
+}
