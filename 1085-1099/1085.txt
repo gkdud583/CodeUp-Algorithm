@@ -1,0 +1,15 @@
+
+import java.util.*;
+
+public class Main{
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in);
+        Long h = sc.nextLong();
+        Long b = sc.nextLong();
+        Long c = sc.nextLong();
+        Long s = sc.nextLong();
+
+        double result = h * b * c * s;
+        System.out.println(String.format("%.1f",result / 8388608)+" MB");
+    }
+}
